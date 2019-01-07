@@ -1,0 +1,64 @@
+//Get random number
+function getRandomNumber() {
+  return 4; //Chosen by a fair dice roll.
+            //guaranteed to be random.
+}
+
+//Random Function (so I dont have to typle a Math.random every time)
+var rand = function (r){return Math.floor(Math.random()*r);}
+
+//Get date for AGDQ/SGDQ toggle
+var d = new Date();
+var month = d.getMonth();
+
+//Check the date to see if AGDQ or SGDQ is on
+if (month>=6){var gdq = "SGDQ";}
+else {var gdq = "AGDQ";}
+
+function generateText() {
+  //Arrays of replacement text
+  var textNoun = ["Germany","cancer","animal","donation","viewer","frames"];
+  var textVerb = ["kill","save","donate","view"];
+  var textVerber = ["donator","viewer"];
+  var textSt = ["first", "second", "third", "fourth"]
+
+  //Choose random template
+  switch (rand(4)) {
+    case 0:
+    var text = "Hey guys, long time "+textVerber[rand(textVerber.length)]+", "+textSt[rand(textSt.length)]+" time "+textVerber[rand(textVerber.length)]+".\
+                It gives me great joy to "+textVerb[rand(textVerb.length)]+" to a great cause.\
+                Greetings from "+textNoun[rand(textNoun.length)]+". PS: "+textVerb[rand(textVerb.length)]+" the "+textNoun[rand(textNoun.length)]+", "+textVerb[rand(textVerb.length)]+" the "+textNoun[rand(textNoun.length)]+".";
+      break;
+    case 1:
+    var text = "Greetings from "+textNoun[rand(textNoun.length)]+". Long time "+textVerber[rand(textVerber.length)]+", "+textSt[rand(textSt.length)]+" time "+textVerber[rand(textVerber.length)]+".\
+                I am donating because my "+textNoun[rand(textNoun.length)]+" has died from "+textNoun[rand(textNoun.length)]+".";
+      break;
+    case 2:
+    var text = textSt[rand(textSt.length)]+" time watching "+gdq+", "+textSt[rand(textSt.length)]+" time "+textVerber[rand(textVerber.length)]+".\
+              My "+textNoun[rand(textNoun.length)]+" passed away from "+textNoun[rand(textNoun.length)]+". Money goes to "+textVerb[rand(textVerb.length)]+" the "+textNoun[rand(textNoun.length)]+", "+textVerb[rand(textVerb.length)]+" the "+textNoun[rand(textNoun.length)]+". Hype!!!!";
+      break;
+    case 3:
+    var text = "Had to "+textVerb[rand(textVerb.length)]+" during this run. Put my money towards "+textVerb[rand(textVerb.length)]+" the "+textNoun[rand(textNoun.length)]+". Lets kick "+textNoun[rand(textNoun.length)]+"'s but!";
+      break;
+  }
+  //Output donation text
+  $("#donation-text").text(text);
+
+  //Clear Copy message
+  $(".message").html("");
+
+  //Initialize Clipboard.js
+  new Clipboard('.copy');
+}
+//Output copy alert to page
+function copyMessage() {
+  $(".message").html("<p>Your donation has been copied to the clipboard</p>");
+}
+//Get and display changelog.txt file
+function changelog() {
+  $.get("changelog.txt", function(changes){
+  		$("#changelog").html(changes);
+  });
+}
+
+/* Long time rifleman, first time pilot. Had to uphold the objective during this mission. My captain died from mercenaries, so ammo goes to kill the Apex Predators. Hype!!! */
