@@ -39,9 +39,9 @@
 			<p id="donation-text">Loading...</p>
 		</div>
 		<div class="buttons">
-			<a href="https://gamesdonequick.com/donate" target="_blank" rel="noopener noreferrer">Donate</a>
-			<a class="copy" data-clipboard-target="#donation-text" onclick="copyMessage()">Copy</a>
-			<a onclick="generateText()">Generate</a>
+			<a id="donate" href="https://gamesdonequick.com/donate" target="_blank" rel="noopener noreferrer">Donate</a>
+			<a  id="copy" class="copy" data-clipboard-target="#donation-text" onclick="copyMessage()">Copy</a>
+			<a id="generate" onclick="generateText()">Generate</a>
 		</div>
 		<div class="message"></div>
 
