@@ -63,9 +63,9 @@ $(document).ready(function () {
   }
 
   //Get and display changelog.txt file
-  $.get("changelog.html", function(changes){
-  		$("#changelog").html(changes);
-  });
+  // $.get("changelog.html", function(changes){
+  // 		$("#changelog").html(changes);
+  // });
 
   /* Long time rifleman, first time pilot. Had to uphold the objective during this mission. My captain died from mercenaries, so ammo goes to kill the Apex Predators. Hype!!! */
   $('#copy').on('click', function functionName() {
@@ -79,6 +79,7 @@ $(document).ready(function () {
 
 
   // On page load
+  generateText();
 });
   //Tabbed Box
 

@@ -32,7 +32,7 @@
   <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
   <?php include 'special.php';?>
 </head>
-<body onload="generateText()">
+<body>
 	<h1><img src="assets/img/gdq_logo.png"> Donation Generator</h1>
 	<div class="container">
 		<div class="donation">
@@ -40,8 +40,8 @@
 		</div>
 		<div class="buttons">
 			<a id="donate" href="https://gamesdonequick.com/donate" target="_blank" rel="noopener noreferrer">Donate</a>
-			<a  id="copy" class="copy" data-clipboard-target="#donation-text" onclick="copyMessage()">Copy</a>
-			<a id="generate" onclick="generateText()">Generate</a>
+			<a id="copy" class="copy" data-clipboard-target="#donation-text">Copy</a>
+			<a id="generate">Generate</a>
 		</div>
 		<div class="message"></div>
 
@@ -69,6 +69,12 @@
   	</div>
   	<div id="tab-2" class="tab-content">
       <div id="changelog"></div>
+			<div class="github">
+				<p>All changes can be found on GitHub</p>
+				<div class="buttons">
+					<a href="https://github.com/taskinoz/GDQ-Donation-Generator">Changelog</a>
+				</div>
+			</div>
     </div>
 
 	</div>
