@@ -3,13 +3,13 @@ if ($_SERVER['REQUEST_URI'] == "/gdq/special.php"){
   echo "<!-- Silence is Golden -->";
 }
 else {
-  $special = false;
-  $marathon = "ESA";
+  $special = true;
+  $marathon = "Calithon";
   //$marathon = "GDQ Express";
 
   if ($special && rand(0,5) == 4){
-    echo "<!-- Special -->";
-    echo '<script>gdq="'.$marathon.'"</script>';
+    echo "<!-- Special -->"."\n";
+    echo '<script>$(document).ready(function(){special="'.$marathon.'";});</script>'."\n";
   }
 }
 ?>
