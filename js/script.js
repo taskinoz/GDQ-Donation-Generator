@@ -12,13 +12,13 @@ $(document).ready(function () {
   var month = d.getMonth();
 
   //Check the date to see if AGDQ or SGDQ is on
-  //if (typeof(special)==undefined) {
+  if (typeof(special)=="undefined") {
     if (month>=5){var gdq = "SGDQ";}
     else {var gdq = "AGDQ";}
-  //}
-  //else {
-    //gdq=special;
-  //}
+  }
+  else {
+    gdq=special;
+  }
 
 
   function generateText() {

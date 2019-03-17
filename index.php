@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href= "css/style.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/clipboard.min.js"></script>
+	<?php include 'special.php';?>
 	<script type="text/javascript" src="js/script.js"></script>
 
   <?php include 'anylitics.php';?>
@@ -30,7 +31,6 @@
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="msapplication-TileImage" content="assets/favicon/mstile-144x144.png">
   <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
-  <?php include 'special.php';?>
 </head>
 <body>
 	<h1><img src="assets/img/gdq_logo.png"> Donation Generator</h1>
