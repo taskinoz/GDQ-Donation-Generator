@@ -3,7 +3,7 @@ if ($_SERVER['REQUEST_URI'] == "/gdq/special.php"){
   echo "<!-- Silence is Golden -->";
 }
 else {
-  $special = true;
+  $special = false;
   $marathon = "Calithon";
   //$marathon = "GDQ Express";
 
