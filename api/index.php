@@ -10,6 +10,7 @@ $textVerb = array("kill","save","donate","view"); //Destroyed,
 $textVerber = array("donator","viewer","runner"); //runners
 $textVerbing = array("watching","working");
 $textSt = array("first", "second", "third", "fourth");
+$textHype = array("Hype","Honk","Orb","Hyyyyyyyppppppppeeeeeee");
 
 //Choose template from URL
 //If no template selected choose a random one
@@ -31,7 +32,7 @@ switch ($switch) {
     break;
 
   case 2:
-    echo ucwords($textSt[rand(0,count($textSt)-1)])." time watching ".$gdq.", ".$textSt[rand(0,count($textSt)-1)]." time ".$textVerber[rand(0,count($textVerber)-1)].". My ".$textNoun[rand(0,count($textNoun)-1)]." passed away from ".$textNoun[rand(0,count($textNoun)-1)].". Money goes to ".$textVerb[rand(0,count($textVerb)-1)]." the ".$textNoun[rand(0,count($textNoun)-1)].", ".$textVerb[rand(0,count($textVerb)-1)]." the ".$textNoun[rand(0,count($textNoun)-1)].". Hype!!!!";
+    echo ucwords($textSt[rand(0,count($textSt)-1)])." time watching ".$gdq.", ".$textSt[rand(0,count($textSt)-1)]." time ".$textVerber[rand(0,count($textVerber)-1)].". My ".$textNoun[rand(0,count($textNoun)-1)]." passed away from ".$textNoun[rand(0,count($textNoun)-1)].". Money goes to ".$textVerb[rand(0,count($textVerb)-1)]." the ".$textNoun[rand(0,count($textNoun)-1)].", ".$textVerb[rand(0,count($textVerb)-1)]." the ".$textNoun[rand(0,count($textNoun)-1)].". ".$textHype[rand(0,count($textHype)-1)]."!!!!";
     break;
 
   case 3:
@@ -45,7 +46,9 @@ switch ($switch) {
   case 5:
     echo "Thanks to the ".$textVerber[rand(0,count($textVerber)-1)]." and those ".$textVerbing[rand(0,count($textVerbing)-1)]." behind the scenes, glad to ".$textVerb[rand(0,count($textVerb)-1)]." to such a worthy cause. Put this ".$textNoun[rand(0,count($textNoun)-1)]." towards ".$textVerber[rand(0,count($textVerber)-1)]."'s choice!";
     break;
-
+  case 6:
+    echo "Honk".(rand(0,8) == 1? "":str_repeat(" honk", rand(1,10)))."! Honk".str_repeat(" honk",rand(1,7)).". Honk honk. "."Honk ".str_repeat(" honk", rand(1,10))."? Hoooooonnnnnnnnkkkkkk!!!";
+  break;
   default:
   echo "Error: there are no more templates.";
 

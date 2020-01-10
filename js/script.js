@@ -28,9 +28,10 @@ $(document).ready(function () {
     var textVerber = ["donator","viewer","runner"]; //runners
     var textVerbing = ["watching","working"];
     var textSt = ["first", "second", "third", "fourth"];
+    var textHype = ["Hype","Honk","Orb","Hyyyyyyyppppppppeeeeeee"];
 
     //Choose random template
-    switch (rand(6)) {
+    switch (rand(7)) {
       case 0:
       var text = "Hey guys, long time "+textVerber[rand(textVerber.length)]+", "+textSt[rand(textSt.length)]+" time "+textVerber[rand(textVerber.length)]+". It gives me great joy to "+textVerb[rand(textVerb.length)]+" to a great cause. Greetings from "+textNoun[rand(textNoun.length)]+". PS: "+textVerb[rand(textVerb.length)]+" the "+textNoun[rand(textNoun.length)]+", "+textVerb[rand(textVerb.length)]+" the "+textNoun[rand(textNoun.length)]+".";
         break;
@@ -38,7 +39,7 @@ $(document).ready(function () {
       var text = "Greetings from "+textNoun[rand(textNoun.length)]+". Long time "+textVerber[rand(textVerber.length)]+", "+textSt[rand(textSt.length)]+" time "+textVerber[rand(textVerber.length)]+". I am donating because my "+textNoun[rand(textNoun.length)]+" has died from "+textNoun[rand(textNoun.length)]+".";
         break;
       case 2:
-      var text = textSt[rand(textSt.length)]+" time watching "+gdq+", "+textSt[rand(textSt.length)]+" time "+textVerber[rand(textVerber.length)]+". My "+textNoun[rand(textNoun.length)]+" passed away from "+textNoun[rand(textNoun.length)]+". Money goes to "+textVerb[rand(textVerb.length)]+" the "+textNoun[rand(textNoun.length)]+", "+textVerb[rand(textVerb.length)]+" the "+textNoun[rand(textNoun.length)]+". Hype!!!!";
+      var text = textSt[rand(textSt.length)]+" time watching "+gdq+", "+textSt[rand(textSt.length)]+" time "+textVerber[rand(textVerber.length)]+". My "+textNoun[rand(textNoun.length)]+" passed away from "+textNoun[rand(textNoun.length)]+". Money goes to "+textVerb[rand(textVerb.length)]+" the "+textNoun[rand(textNoun.length)]+", "+textVerb[rand(textVerb.length)]+" the "+textNoun[rand(textNoun.length)]+". "+textHype[rand(textHype.length)]+"!!!!";
         break;
       case 3:
       var text = "Had to "+textVerb[rand(textVerb.length)]+" during this run. Put my money towards "+textVerb[rand(textVerb.length)]+" the "+textNoun[rand(textNoun.length)]+". Lets kick "+textNoun[rand(textNoun.length)]+"'s butt!";
@@ -48,6 +49,9 @@ $(document).ready(function () {
         break;
       case 5:
       var text = "Thanks to the "+textVerber[rand(textVerber.length)]+" and those "+textVerbing[rand(textVerbing.length)]+" behind the scenes, glad to "+textVerb[rand(textVerb.length)]+" to such a worthy cause. Put this "+textNoun[rand(textNoun.length)]+" towards "+textVerber[rand(textVerber.length)]+"'s choice!";
+        break;
+      case 6:
+      var text = "Honk"+(rand(8) == 1? "":" honk".repeat(rand(10)+1))+"! Honk"+(" honk".repeat(rand(7)+1))+". Honk honk. "+"Honk "+(" honk".repeat(rand(10)+1))+"? Hoooooonnnnnnnnkkkkkk!!!";
         break;
     }
 
