@@ -58,13 +58,13 @@
       <div id="api">
         <p>The GDQ Donation Generator now has an API that you can use for Twitch, Discord and other applications.</p>
         <p>To access the API call:</p>
-        <div class="code">http://taskinoz.com/gdq/api</div>
+        <div class="code">https://taskinoz.com/gdq/api</div>
         <br>
         <p>With Nightbot, add the custom command:</p>
-        <div class="code">$(urlfetch http://taskinoz.com/gdq/api/)</div>
+        <div class="code">$(urlfetch https://taskinoz.com/gdq/api/)</div>
         <br>
         <p>With Ankhbot, add the custom command:</p>
-        <div class="code">$readapi(http://taskinoz.com/gdq/api/)</div>
+        <div class="code">$readapi(https://taskinoz.com/gdq/api/)</div>
       </div>
   	</div>
   	<div id="tab-2" class="tab-content">
