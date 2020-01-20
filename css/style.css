@@ -28,11 +28,6 @@ h1{
 	margin: 20px;
 	text-align: center;
 }
-h1::after{
-	content: "v9";
-	margin: 10px;
-	font-size: 10px;
-}
 
 #donation-text::first-letter{
   text-transform: capitalize
