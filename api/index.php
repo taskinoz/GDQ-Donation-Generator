@@ -5,7 +5,7 @@ if (date('m')>=6){$gdq = "SGDQ";}
 else {$gdq = "AGDQ";}
 
 //Arrays of replacement text
-$textNoun = array("Germany","cancer","animal","donation","viewer","frames","games");
+$textNoun = array("Germany","cancer","animal","grub","donation","viewer","frames","games");
 $textVerb = array("kill","save","donate","view"); //Destroyed,
 $textVerber = array("donator","viewer","runner"); //runners
 $textVerbing = array("watching","working");

@@ -23,7 +23,7 @@ $(document).ready(function () {
 
   function generateText() {
     //Arrays of replacement text
-    var textNoun = ["Germany","cancer","animal","donation","viewer","frames","games"];
+    var textNoun = ["Germany","cancer","animal","grub","donation","viewer","frames","games"];
     var textVerb = ["kill","save","donate","view"]; //Destroyed,
     var textVerber = ["donator","viewer","runner"]; //runners
     var textVerbing = ["watching","working"];
