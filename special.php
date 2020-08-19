@@ -4,8 +4,7 @@ if ($_SERVER['REQUEST_URI'] == "/gdq/special.php"){
 }
 else {
   $special = false;
-  $marathon = "Calithon";
-  //$marathon = "GDQ Express";
+  $marathon = "";
 
   if ($special && rand(0,5) == 4){
     echo "<!-- Special -->"."\n";
