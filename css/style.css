@@ -14,14 +14,22 @@ html, body, div, header, h1{
   font-family: museo-sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
+body {
+	background-color: rgb(26, 32, 44);
+	color: #fff;
+}
+
 /*--- HEADINGS ---*/
 h1,h2,h3{
   text-transform: uppercase;
 }
 
-h1 img{
+h1 svg{
 	height: 50px;
 	width: auto;
+	vertical-align: middle;
+	padding-bottom: 6px;
+	fill: currentColor;
 }
 h1{
 	font-size: 50px;
@@ -45,24 +53,28 @@ h1{
 	text-align: center;
 	margin: 30px;
 }
-.buttons a{
-	background-color: #00AEEF;
+.buttons button{
+	background: linear-gradient(90deg,#f89a66,#fc6793);
 	padding: 10px 15px;
-	border-radius: 5px;
-	text-decoration: none;
+	border-radius: 0;
 	color: #fff;
-  cursor:pointer;
+	border-radius: 0;
 	display: inline-block;
 	margin: 5px 0;
+	transition: 0.3s;
+	text-transform: uppercase;
+}
+.buttons button:hover {
+	background: #fff;
+    color: #fc6793;
 }
 .message p{
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 14px;
-	background-color: #2ECC71;
+	background: linear-gradient(90deg,#66f1f8,#67fc95);
 	color: #fff;
 	padding: 10px 15px;
-	border-radius: 5px;
 	transition: 0.5s;
 	animation: fade 1s;
 }
@@ -120,6 +132,7 @@ ul.tabs li{
 	display: inline-block;
 	padding: 10px 15px;
 	cursor: pointer;
+	color: #fff;
 }
 
 ul.tabs li.current{
@@ -131,6 +144,10 @@ ul.tabs li.current{
 	display: none;
 	border: 4px solid #ededed;
 	padding: 40px;
+}
+
+.tab-content a {
+	color: #fff;
 }
 
 .tab-content.current{
