@@ -49,7 +49,7 @@
 		</div>
 		<div class="message"></div>
 
-  <?php include 'ads.php';?>
+  <!-- <?php include 'ads.php';?> -->
 
   <!-- container -->
   <div class="tabs-container">
