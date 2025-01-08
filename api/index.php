@@ -51,6 +51,7 @@ switch ($switch) {
   break;
   case 7:
     echo "Weeee".(rand(0,8) == 1? "":str_repeat(" weeee", rand(1,10)))."! Wiiiii".str_repeat(" wiiiii",rand(1,7)).". Weeee wiiiii. "."Weeee ".str_repeat(" wiiiii", rand(1,10))."? Woooooohooooooo!!!";
+  break;
   default:
   echo "Error: there are no more templates.";
 
