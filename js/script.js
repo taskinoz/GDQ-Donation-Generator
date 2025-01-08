@@ -31,7 +31,7 @@ $(document).ready(function () {
     var textHype = ["Hype","Honk","Orb","Hyyyyyyyppppppppeeeeeee"];
 
     //Choose random template
-    switch (rand(7)) {
+    switch (rand(8)) {
       case 0:
       var text = "Hey guys, long time "+textVerber[rand(textVerber.length)]+", "+textSt[rand(textSt.length)]+" time "+textVerber[rand(textVerber.length)]+". It gives me great joy to "+textVerb[rand(textVerb.length)]+" to a great cause. Greetings from "+textNoun[rand(textNoun.length)]+". PS: "+textVerb[rand(textVerb.length)]+" the "+textNoun[rand(textNoun.length)]+", "+textVerb[rand(textVerb.length)]+" the "+textNoun[rand(textNoun.length)]+".";
         break;
@@ -52,6 +52,9 @@ $(document).ready(function () {
         break;
       case 6:
       var text = "Honk"+(rand(8) == 1? "":" honk".repeat(rand(10)+1))+"! Honk"+(" honk".repeat(rand(7)+1))+". Honk honk. "+"Honk "+(" honk".repeat(rand(10)+1))+"? Hoooooonnnnnnnnkkkkkk!!!";
+        break;
+      case 7:
+      var text = "Weeee"+(rand(8) == 1? "":" weeee".repeat(rand(10)+1))+"! Wiiiii"+(" wiiiii".repeat(rand(7)+1))+". Weeee wiiiii. "+"Weeee "+(" wiiiii".repeat(rand(10)+1))+"? Woooooohooooooo!!!";
         break;
     }
 

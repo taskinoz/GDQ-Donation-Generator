@@ -18,7 +18,7 @@ if (isset($_GET['temp'])){
   $switch = $_GET['temp'];
 }
 else{
-  $switch = rand(0,5);
+  $switch = rand(0,7);
 }
 
 //Template options
@@ -49,6 +49,8 @@ switch ($switch) {
   case 6:
     echo "Honk".(rand(0,8) == 1? "":str_repeat(" honk", rand(1,10)))."! Honk".str_repeat(" honk",rand(1,7)).". Honk honk. "."Honk ".str_repeat(" honk", rand(1,10))."? Hoooooonnnnnnnnkkkkkk!!!";
   break;
+  case 7:
+    echo "Weeee".(rand(0,8) == 1? "":str_repeat(" weeee", rand(1,10)))."! Wiiiii".str_repeat(" wiiiii",rand(1,7)).". Weeee wiiiii. "."Weeee ".str_repeat(" wiiiii", rand(1,10))."? Woooooohooooooo!!!";
   default:
   echo "Error: there are no more templates.";
 
