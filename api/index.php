@@ -12,13 +12,19 @@ $textVerbing = array("watching","working");
 $textSt = array("first", "second", "third", "fourth");
 $textHype = array("Hype","Honk","Orb","Hyyyyyyyppppppppeeeeeee");
 
+$memeTexts = false;
+
+if (isset($_GET['meme']) && $_GET['meme'] == "true"){
+  $memeTexts = true;
+}
+
 //Choose template from URL
 //If no template selected choose a random one
 if (isset($_GET['temp'])){
   $switch = $_GET['temp'];
 }
 else{
-  $switch = rand(0,7);
+  $switch = $memeTexts ? rand(0,7) : rand(0,5);
 }
 
 //Template options
